@@ -1,0 +1,10 @@
+name: book_store
+channels:
+  - defaults
+dependencies:
+  - python
+  - pytest
+  - pip
+  - hypothesis
+  - pip:
+      - pytest-cov
