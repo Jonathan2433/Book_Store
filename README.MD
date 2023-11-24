@@ -73,4 +73,10 @@ To set up the project:
 3. Active it `conda activate booklist_project`.
 4. Run tests using `pytest -v` in the root directory.
 
-For more detailed instructions, refer to the comments in each code file.
+
+
+
+[![codecov](https://codecov.io/gh/Jonathan2433/Book_Store/branch/master/graph/badge.svg?token=1087475e-4ba4-48a4-8d26-51cdf36f979a)](https://codecov.io/gh/Jonathan2433/Book_Store)
+
+
+
