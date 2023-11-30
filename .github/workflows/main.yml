@@ -46,12 +46,13 @@ jobs:
         verbose: true
 
 
-    - name: Run mutation tests with mutmut
+    - name: Run install mutmut
       run: |
         pip install mutmut
+
+    - name: Run mutation tests with mutmut
+      run: |
         mutmut run
-
-
 
 
     
