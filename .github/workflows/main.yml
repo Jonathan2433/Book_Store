@@ -49,5 +49,6 @@ jobs:
     - name: Run mutation tests with mutmut
       run: |
         pip install mutmut
-        mutmut run --paths-to-mutate=APPLICATION/
+        mutmut run
+
 
