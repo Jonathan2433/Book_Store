@@ -48,8 +48,10 @@ jobs:
 
     - name: Run mutation tests with mutmut
       run: |
+        conda activate booklist_project
         pip install mutmut
-        mutmut run --config-file mutmut_config.py
+        mutmut run --paths-to-mutate=APPLICATION/
+
 
 
     
