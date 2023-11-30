@@ -1,3 +1,0 @@
-[tool.mutmut]
-runner = "pytest"
-paths_to_mutate = "APPLICATION/"
