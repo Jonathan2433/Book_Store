@@ -16,3 +16,8 @@ def test_create_book_without_title_should_raise_error():
 def test_create_book_without_author_should_raise_error():
     with pytest.raises(ValueError):
         Book(title="1984", author="")
+
+
+def test_create_book_without_nothing_should_raise_error():
+    with pytest.raises(ValueError):
+        Book(title="", author="")
