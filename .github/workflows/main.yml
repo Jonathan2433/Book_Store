@@ -1,10 +1,12 @@
 name: book_store
 
+
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+
 
 jobs:
   build:
@@ -14,6 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+
     - name: Set up Conda
       uses: conda-incubator/setup-miniconda@v2
       with:
@@ -22,9 +25,11 @@ jobs:
         environment-file: environment.yml
         activate-environment: booklist_project
 
+
     - name: Install dependencies
       run: |
         conda env update --file environment.yml --name booklist_project
+
 
     - name: Run tests with coverage
       shell: bash -l {0}
@@ -39,3 +44,10 @@ jobs:
         flags: unittests
         fail_ci_if_error: true
         verbose: true
+
+
+    - name: Run mutation tests with mutmut
+      run: |
+        pip install mutmut
+        mutmut run --paths-to-mutate=APPLICATION/
+

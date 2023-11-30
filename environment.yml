@@ -8,3 +8,4 @@ dependencies:
   - hypothesis
   - pip:
       - pytest-cov
+      - mutmut
