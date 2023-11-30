@@ -46,13 +46,12 @@ jobs:
         verbose: true
 
 
-    - name: Run install mutmut
-      run: |
-        pip install mutmut
+    - name: Install mutmut
+      run: pip install mutmut
 
     - name: Run mutation tests with mutmut
-      run: |
-        mutmut run
+      run: mutmut run --paths-to-mutate APPLICATION/
+
 
 
     
