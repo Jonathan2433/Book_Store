@@ -23,7 +23,7 @@ jobs:
         auto-update-conda: true
         python-version: '3.9'
         environment-file: environment.yml
-        activate-environment: booklist_project
+        activate-environment: book_store
 
 
     - name: Install dependencies
@@ -48,7 +48,7 @@ jobs:
 
     - name: Run mutation tests with mutmut
       run: |
-        conda activate booklist_project
+        conda activate book_store
         pip install mutmut
         mutmut run --paths-to-mutate=APPLICATION/
 
