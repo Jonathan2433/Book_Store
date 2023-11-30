@@ -13,6 +13,6 @@ def test_command(context):
     return "pytest"
 
 # Chemin vers le code source à muter
-paths_to_mutate = "APPLICATION/"
+paths_to_mutate = "./APPLICATION/"
 
 # Vous pouvez spécifier des commandes supplémentaires, des chemins à ignorer, etc.
