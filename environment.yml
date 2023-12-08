@@ -9,3 +9,5 @@ dependencies:
   - pip:
       - pytest-cov
       - mutmut
+      - Flask-Testing
+
